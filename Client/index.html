@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Decentralized Wallet</h1>
+        <button id="generateButton">Generate Account</button>
+        <div id="walletInfo" class="hidden">
+            <h2>Wallet Details</h2>
+            <div class="mymenomic">
+
+                <div>
+                    <label for="mnemonic">Mnemonic:</label>
+                    <textarea id="mnemonic" rows="4" readonly></textarea>
+                </div>
+                <div>
+                    <label for="publicKey">Public Key:</label>
+                    <input type="text" id="publicKey" readonly>
+                </div>
+                <div>
+                    <label for="secretKey">Secret Key:</label>
+                    <input type="text" id="secretKey" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
