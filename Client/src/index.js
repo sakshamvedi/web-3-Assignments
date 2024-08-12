@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateButton.addEventListener('click', async () => {
         try {
 
-            const response = await fetch('http://localhost:3000/generate-keypair');
+            const response = await fetch('https://web-3-assignments-1.onrender.com/generate-keypair');
             const data = await response.json();
 
 

@@ -20,7 +20,7 @@ app.get('/generate-keypair', (req, res) => {
         const seed = bip39.mnemonicToSeedSync(mnemonic);
         const keypair = Keypair.fromSeed(seed.slice(0, 32));
         const publicKeyString = keypair.publicKey.toString();
-        const sectetKeyString = keypair.secretKey.toString(hex);
+        const sectetKeyString = keypair.secretKey.toString();
         keypairStore[publicKeyString] = keypair;
         res.json({
             mnemonic: mnemonic,
